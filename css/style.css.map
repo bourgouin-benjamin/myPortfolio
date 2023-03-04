@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,CAAC;EACG,MAAM,EAAC,CAAC;EACR,OAAO,EAAC,CAAC;;ACFb,MAAM;EACF,KAAK,EAAE,IAAI;;ACDf,EAAE;EACE,KAAK,ECDD,OAAO;;ACAf,WAAY;EACR,MAAM,EAAC,KAAK;EACZ,KAAK,EAAC,IAAI;EACV,UAAU,EDFD,oDAAoD",
+"sources": ["../sass/helpers/reset.scss","../sass/helpers/clear.scss","../sass/components/title.scss","../sass/helpers/variables.scss","../sass/components/background.scss"],
+"names": [],
+"file": "style.css"
+}
