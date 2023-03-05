@@ -1,0 +1,131 @@
+.card{
+    width:$maxWidth;
+    height:auto;
+    margin:auto;
+    position:relative;
+    z-index:9;
+    
+    &::before{
+        content:'';
+        position:absolute;
+        top:5%;
+        left:10%;
+        width:80%;
+        height:90%;
+        background:$cardShadow;
+        border-radius: 60%;
+        filter: blur(5rem);
+        opacity:0.9;
+    }
+
+    main{
+        width:100%;
+        height:auto;
+        background-image: $cardGradient;
+        border: $glassBorder;
+        border-radius:$mainRadius;
+        backdrop-filter: blur( 10.5px );
+        -webkit-backdrop-filter: blur( 10.5px );
+        z-index:10;
+    
+        section,
+        footer{
+            padding: $cardPadding;
+            box-sizing: border-box;
+        }
+    
+        section{
+            width:100%;
+            display:flex;
+            align-items: flex-start;
+            justify-content: space-between;
+    
+            article.infos{
+                width:60%;
+    
+                h1{
+                    color: $myName;
+                    font-size:32px;
+                    font-weight:800;
+                    letter-spacing:2px;
+                }
+    
+                h2{
+                    color: $greyCard;
+                    font-size: 24px;
+                    font-weight:500;
+                    margin:15px 0 60px 0;
+    
+                    span{
+                        width:100%;
+                        display:block;
+                    }
+                }
+
+                a{
+                   font-size:18px;
+                   font-weight:600;
+                   color: $cardButton;
+                   border:2px solid $cardButton;
+                   padding:15px;
+                   box-sizing: border-box;
+                   text-decoration: none; 
+                }
+            }
+
+            article.photo{
+                img{
+                    border-radius:1000px;
+                    border:2px solid rgba(255,255,255,0.25);
+                }
+            }
+        }
+    
+        footer{
+            background-image: $cardFooterGradient;
+            border-bottom-left-radius: $mainRadius;
+            border-bottom-right-radius: $mainRadius;
+            display:flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+    
+            article{
+                width:50%;
+
+                p{
+                    color: $white;
+
+                    &:first-child{
+                        margin:0 0 15px 0;
+                        font-size:13px;
+                        letter-spacing: 1px;
+                    }
+                }
+
+                .socials{
+                    display:flex;
+                    justify-content:flex-start;
+                    align-items:flex-start;
+
+                    .social{
+                        display:block;
+                        border:2px solid $white;
+                        border-radius:50px;
+                        padding:10px;
+                        box-sizing: border-box;
+                        margin:0 10px 0 0;
+                    }
+                }
+
+                &.mail{
+                    a{
+                        display:block;
+                        color: $white;
+                        text-decoration:none;
+                        margin:0 0 5px 0;
+                    }
+                }
+            }
+        }
+    }
+}

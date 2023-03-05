@@ -1,3 +1,22 @@
+// COLORS-14.09% 20.12%
 $white: #f4f4f4;
 $bgGradient: linear-gradient(to bottom, #0e0e0e 0%, #262626 100%);
+$cardGradient: radial-gradient(circle at -8% 10%, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.01) 100%);
+$cardFooterGradient: linear-gradient(94deg, #62B8DF 0%, #5B44D8 50%, #C054F2 100%);
+$myName: #5B48D8;
+$greyCard: #62616B;
+$spotOrange: #F5B089;
+$spotBlue: #2F1F93;
+$cardShadow: #D8A4F7;
+$cardButton: #854BE3;
+
+// FONTS
 $sansSerif: 'Montserrat', sans-serif;
+
+// SIZES
+$maxWidth: 60%;
+$cardPadding: 40px;
+
+// BORDERS
+$glassBorder: 1px solid rgba(255,255,255,0.1);
+$mainRadius: 25px;
