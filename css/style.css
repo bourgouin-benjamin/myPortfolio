@@ -33,10 +33,12 @@ header {
       align-items: center; }
       header .menu ul li {
         font-family: "Montserrat", sans-serif;
-        color: #f4f4f4;
         text-transform: uppercase;
         letter-spacing: 2px;
         font-weight: 600;
         font-size: 14px; }
+        header .menu ul li a {
+          text-decoration: none;
+          color: #f4f4f4; }
 
 /*# sourceMappingURL=style.css.map */
