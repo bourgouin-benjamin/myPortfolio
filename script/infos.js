@@ -41,9 +41,9 @@ const Informations = (function () {
         build () {
             Object.entries(this.settings).forEach(techno => {
                 const newLi = super.build('li', techno[1].id)
-                const newP = super.build('p')
-                newP.innerHTML = techno[1].name 
-                newLi.appendChild(newP)
+                const newImg = super.build('img', techno[1].id)
+                newImg.setAttribute('src', techno[1].name)
+                newLi.appendChild(newImg)
                 this.outputArea.appendChild(newLi)
             })
         }
@@ -94,10 +94,10 @@ const Informations = (function () {
                         buildingPart = new TechnologiesBuilder(settings.technologies)
                         break;
                     case 'formations':
-                        buildingPart = new ExpertiseBuilder(settings.formations)
+                        buildingPart = new FormationsBuilder(settings.formations)
                         break;
                     case 'experiences':
-                        buildingPart = new TechnologiesBuilder(settings.experiences)
+                        buildingPart = new ExperiencesBuilder(settings.experiences)
                         break;
                     default:
                         break;

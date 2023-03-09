@@ -162,7 +162,7 @@ main.infos {
   height: auto;
   margin: auto; }
   main.infos .quote {
-    margin: 0 0 30px 0;
+    margin: 80px 0;
     padding: 5%;
     box-sizing: border-box;
     position: relative; }
@@ -194,7 +194,7 @@ main.infos {
   main.infos section.expertise {
     width: 100%;
     height: auto;
-    margin: 0 0 30px 0; }
+    margin: 60px 0; }
     main.infos section.expertise h1, main.infos section.expertise h2 {
       color: #f4f4f4;
       font-size: 30px;
@@ -223,5 +223,39 @@ main.infos {
           color: #f4f4f4;
           font-weight: 600;
           font-size: 20px; }
+  main.infos section.technologies {
+    width: 100%;
+    height: auto;
+    margin: 60px 0; }
+    main.infos section.technologies h1, main.infos section.technologies h2 {
+      color: #f4f4f4;
+      font-size: 30px;
+      position: relative;
+      margin: 0 0 30px 0; }
+      main.infos section.technologies h1::after, main.infos section.technologies h2::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        height: 2px;
+        width: 100%;
+        background: #f4f4f4;
+        opacity: 0.75; }
+    main.infos section.technologies ul {
+      list-style: none;
+      padding: 20px 0 0 0;
+      box-sizing: border-box; }
+      main.infos section.technologies ul li {
+        float: left;
+        width: auto;
+        padding: 18px 20px;
+        box-sizing: border-box;
+        border: 2px solid #f4f4f4;
+        margin: 0 25px 50px 25px;
+        transform: rotate(45deg); }
+        main.infos section.technologies ul li img {
+          width: 30px;
+          height: 30px;
+          transform: rotate(-45deg); }
 
 /*# sourceMappingURL=style.css.map */
