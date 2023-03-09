@@ -1,0 +1,42 @@
+.quote{
+    margin:0 0 30px 0;
+    padding:5%;
+    box-sizing: border-box;
+    position:relative;
+
+    &::before, 
+    &::after{
+        content:'"';
+        font-family: $quote;
+        position:absolute;
+        color:$white;
+        font-size:200px;
+        font-weight:bold;
+        opacity:0.3;
+        z-index:1;
+    }
+
+    &::before{
+        top:0;
+        left:0;
+    }
+
+    &::after{
+        right:0;
+        bottom:-100px;
+    }
+
+    p{
+        color: $white;
+        font-size:52px;
+        font-family: $serif;
+        font-style: italic;
+        z-index:10;
+
+        strong{
+            font-family: $serif;
+            font-style:italic;
+            font-weight:500;
+        }
+    }
+}

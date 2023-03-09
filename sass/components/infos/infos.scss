@@ -1,0 +1,7 @@
+main.infos {
+    width: $maxWidth;
+    height:auto;
+    margin: auto;
+
+    @import "quote.scss";
+}
