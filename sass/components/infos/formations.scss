@@ -1,0 +1,43 @@
+section.formations{
+    width:100%;
+    height:auto;
+    margin:60px 0;
+
+    @import "infosTitles.scss";
+
+    ul{
+        list-style: none;
+        padding:20px 0 0 0;
+        box-sizing: border-box;
+
+        li{
+            width:100%;
+            border:2px solid $cardShadow;
+            padding:15px;
+            box-sizing: border-box;
+            border-radius: 30px;
+            margin:0 0 20px 0;
+            display:flex;
+            align-items:center;
+            justify-content: space-between;
+
+            p{
+                color:$white;
+                font-size:16px;
+
+                &.formationName{
+                    font-size:20px;
+                    font-family:$serif;
+                }
+
+                &.schoolName{
+                    font-weight:300;
+                }
+
+                &.year{
+                    font-style:italic;
+                }
+            }
+        }
+    }
+}

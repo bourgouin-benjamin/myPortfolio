@@ -57,9 +57,23 @@ const Informations = (function () {
         build () {
             Object.entries(this.settings).forEach(formation => {
                 const newLi = super.build('li', formation[1].id)
-                const newP = super.build('p')
-                newP.innerHTML = formation[1].name 
-                newLi.appendChild(newP)
+
+                const schoolInfos = super.build('div')
+                const formationName = super.build('p')
+                formationName.innerHTML = formation[1].name
+                formationName.setAttribute('class', 'formationName')
+                const schoolName = super.build('p')
+                schoolName.innerHTML = formation[1].schoolName
+                schoolName.setAttribute('class', 'schoolName')
+                schoolInfos.appendChild(formationName)
+                schoolInfos.appendChild(schoolName)
+
+                const year = super.build('p')
+                year.innerHTML = formation[1].year
+                year.setAttribute('class', 'year')
+
+                newLi.appendChild(schoolInfos)
+                newLi.appendChild(year)
                 this.outputArea.appendChild(newLi)
             })
         }
