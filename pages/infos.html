@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="../script/infos.js"></script>
 </head>
 <body>
     <div class="background"></div>
@@ -32,23 +33,81 @@
 
         <section class="expertise">
             <h1>Mon expertise</h1>
-            <ul class="expertiseContainer"></ul>
+            <ul id="expertiseContainer"></ul>
         </section>
 
         <section class="technologies">
             <h2>Technologies</h2>
-            <ul class="technologiesContainer"></ul>
+            <ul id="technologiesContainer"></ul>
         </section>
 
         <section class="formations">
             <h2>Mes Formations</h2>
-            <ul class="formationsContainer"></ul>
+            <ul id="formationsContainer"></ul>
         </section>
 
         <section class="experiences">
             <h2>Mes expériences</h2>
-            <ul class="experiencesContainer"></ul>
+            <ul id="experiencesContainer"></ul>
         </section>
     </main>
+
+    <script>
+        const SETTINGS = {
+            expertise: {
+                area: document.getElementById('expertiseContainer'),
+                all: {
+                    expertise1: {
+                        id:1,
+                        name: 'untel'
+                    },
+                    expertise2: {
+                        id:2,
+                        name: 'unautretel'
+                    }
+                }
+            },
+            technologies: {
+                area: document.getElementById('technologiesContainer'),
+                all: {
+                    techno1: {
+                        id:1,
+                        name: 'untel'
+                    },
+                    techno2: {
+                        id:2,
+                        name: 'unautretel'
+                    }
+                }
+            },
+            formations: {
+                area: document.getElementById('formationsContainer'),
+                all: {
+                    formation1: {
+                        id:1,
+                        name: 'untel'
+                    },
+                    formation2: {
+                        id:2,
+                        name: 'unautretel'
+                    }
+                }
+            },
+            experiences: {
+                area: document.getElementById('experiencesContainer'),
+                all: {
+                    experience1: {
+                        id:1,
+                        name: 'untel'
+                    },
+                    experience2: {
+                        id:2,
+                        name: 'unautretel'
+                    }
+                }
+            }
+        }
+        Informations.init(SETTINGS)
+    </script>
 </body>
 </html>
