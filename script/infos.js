@@ -87,9 +87,23 @@ const Informations = (function () {
         build () {
             Object.entries(this.settings).forEach(experience => {
                 const newLi = super.build('li', experience[1].id)
-                const newP = super.build('p')
-                newP.innerHTML = experience[1].name 
-                newLi.appendChild(newP)
+
+                const jobInfos = super.build('div')
+                const jobName = super.build('p')
+                jobName.innerHTML = experience[1].jobName
+                jobName.setAttribute('class', 'jobName')
+                const jobLocation = super.build('p')
+                jobLocation.innerHTML = experience[1].jobLocation
+                jobLocation.setAttribute('class', 'jobLocation')
+                jobInfos.appendChild(jobName)
+                jobInfos.appendChild(jobLocation)
+
+                const date = super.build('p')
+                date.innerHTML = experience[1].date
+                date.setAttribute('class', 'date')
+
+                newLi.appendChild(jobInfos)
+                newLi.appendChild(date)
                 this.outputArea.appendChild(newLi)
             })
         }

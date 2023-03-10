@@ -162,7 +162,7 @@ main.infos {
   height: auto;
   margin: auto; }
   main.infos .quote {
-    margin: 80px 0;
+    margin: 50px 0;
     padding: 5%;
     box-sizing: border-box;
     position: relative; }
@@ -288,7 +288,8 @@ main.infos {
         margin: 0 0 20px 0;
         display: flex;
         align-items: center;
-        justify-content: space-between; }
+        justify-content: space-between;
+        background: rgba(10, 10, 10, 0.25); }
         main.infos section.formations ul li p {
           color: #f4f4f4;
           font-size: 16px; }
@@ -298,6 +299,48 @@ main.infos {
           main.infos section.formations ul li p.schoolName {
             font-weight: 300; }
           main.infos section.formations ul li p.year {
+            font-style: italic; }
+  main.infos section.experiences {
+    width: 100%;
+    height: auto;
+    margin: 60px 0; }
+    main.infos section.experiences h1, main.infos section.experiences h2 {
+      color: #f4f4f4;
+      font-size: 30px;
+      position: relative;
+      margin: 0 0 30px 0; }
+      main.infos section.experiences h1::after, main.infos section.experiences h2::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        height: 2px;
+        width: 100%;
+        background: #f4f4f4;
+        opacity: 0.75; }
+    main.infos section.experiences ul {
+      list-style: none;
+      padding: 20px 0 0 0;
+      box-sizing: border-box; }
+      main.infos section.experiences ul li {
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+        border-radius: 30px;
+        margin: 0 0 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-image: linear-gradient(94deg, #62B8DF 0%, #5B44D8 50%, #C054F2 100%); }
+        main.infos section.experiences ul li p {
+          color: #f4f4f4;
+          font-size: 16px; }
+          main.infos section.experiences ul li p.jobName {
+            font-size: 20px;
+            font-family: "DM Serif Display", serif; }
+          main.infos section.experiences ul li p.jobLocation {
+            font-weight: 300; }
+          main.infos section.experiences ul li p.date {
             font-style: italic; }
 
 /*# sourceMappingURL=style.css.map */
