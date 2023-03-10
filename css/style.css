@@ -343,4 +343,10 @@ main.infos {
           main.infos section.experiences ul li p.date {
             font-style: italic; }
 
+main#workContainer {
+  width: 60%;
+  height: auto;
+  margin: auto;
+  z-index: 10; }
+
 /*# sourceMappingURL=style.css.map */
