@@ -348,5 +348,70 @@ main#workContainer {
   height: auto;
   margin: auto;
   z-index: 10; }
+  main#workContainer section {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-radius: 20px;
+    margin: 0 0 30px 0;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: rgba(10, 10, 10, 0.25);
+    backdrop-filter: blur(10.5px);
+    -webkit-backdrop-filter: blur(10.5px);
+    position: relative; }
+    main#workContainer section .workInfos {
+      width: 50%; }
+      main#workContainer section .workInfos div.textualInfos {
+        padding: 20px;
+        box-sizing: border-box; }
+        main#workContainer section .workInfos div.textualInfos h2 {
+          font-family: "DM Serif Display", serif;
+          color: #f4f4f4;
+          font-weight: 400;
+          font-size: 30px;
+          position: relative; }
+          main#workContainer section .workInfos div.textualInfos h2::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-image: linear-gradient(94deg, #62B8DF 0%, #5B44D8 50%, #C054F2 100%); }
+      main#workContainer section .workInfos p.workDescription {
+        font-weight: 300;
+        color: #f4f4f4;
+        font-style: italic;
+        font-size: 17px;
+        margin: 25px 0 40px 0; }
+      main#workContainer section .workInfos .technologies {
+        width: calc(50% + 1px);
+        padding: 15px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-flow: row wrap;
+        background-image: linear-gradient(94deg, #62B8DF 0%, #5B44D8 50%, #C054F2 100%);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-bottom-left-radius: 20px; }
+        main#workContainer section .workInfos .technologies .techno {
+          width: auto;
+          padding: 3px 5px;
+          box-sizing: border-box;
+          border: 2px solid #f4f4f4;
+          margin: 0 10px 15px 10px;
+          transform: rotate(45deg) translateY(10px); }
+          main#workContainer section .workInfos .technologies .techno img {
+            width: 15px;
+            height: 15px;
+            transform: rotate(-45deg); }
+    main#workContainer section > img {
+      width: 50%;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px; }
 
 /*# sourceMappingURL=style.css.map */

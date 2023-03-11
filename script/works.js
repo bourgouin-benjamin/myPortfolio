@@ -28,21 +28,27 @@ const Works = (function () {
             const workInfos = super.build('div')
             workInfos.setAttribute('class', 'workInfos')
             
+            const textualInfos = super.build('div')
+            textualInfos.setAttribute('class', 'textualInfos')
             const title = super.build('h2')
             title.innerHTML = this.work.name
-            workInfos.appendChild(title)
+            textualInfos.appendChild(title)
 
             const description = super.build('p')
             description.setAttribute('class', 'workDescription')
             description.innerHTML = this.work.description
-            workInfos.appendChild(description)
+            textualInfos.appendChild(description)
+            workInfos.appendChild(textualInfos)
 
             const technologies = super.build('div')
             technologies.setAttribute('class', 'technologies')
             for (let i = 0; i < this.work.technologies.length; i++) {
+                const imageContainer = super.build('div')
+                imageContainer.setAttribute('class', 'techno')
                 const tech = super.build('img')
                 tech.setAttribute('src', this.work.technologies[i])
-                technologies.appendChild(tech)
+                imageContainer.appendChild(tech)
+                technologies.appendChild(imageContainer)
             }
             workInfos.appendChild(technologies)
 
