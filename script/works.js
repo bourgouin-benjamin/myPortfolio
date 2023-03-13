@@ -8,9 +8,9 @@ const Works = (function () {
             this.outputArea = outputArea
         }
 
-        build (tagName, id = false) {
+        build(tagName, id = false) {
             const newElement = document.createElement(tagName)
-            if(id){
+            if (id) {
                 newElement.setAttribute('id', id)
             }
             return newElement
@@ -22,12 +22,12 @@ const Works = (function () {
             super(work, outputArea)
         }
 
-        build () {
+        build() {
             const newWork = super.build('section', this.work.id)
 
             const workInfos = super.build('div')
             workInfos.setAttribute('class', 'workInfos')
-            
+
             const textualInfos = super.build('div')
             textualInfos.setAttribute('class', 'textualInfos')
             const title = super.build('h2')
@@ -54,8 +54,9 @@ const Works = (function () {
 
             newWork.appendChild(workInfos)
 
-            const workImage = super.build('img')
-            workImage.setAttribute('src', this.work.image)
+            const workImage = super.build('div')
+            workImage.setAttribute('class', 'workImage')
+            workImage.style.backgroundImage = "url(" + this.work.image + ")"
             newWork.appendChild(workImage)
 
             this.outputArea.appendChild(newWork)
@@ -63,9 +64,9 @@ const Works = (function () {
     }
 
     return {
-        init: function(works){
+        init: function (works) {
             const outputArea = works.area
-            for(let i = 0; i < works.details.length; i++){
+            for (let i = 0; i < works.details.length; i++) {
                 const builder = new WorkBuilder(works.details[i], outputArea)
                 builder.build()
             }
